@@ -47,6 +47,7 @@ const SavedBooks = () => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     if (!token) {
+      // eslint-disable-next-line 
       return false;
     }
 
